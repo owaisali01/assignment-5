@@ -1,0 +1,126 @@
+question 1
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+</head>
+<body>
+
+<p id ='text'>JavaScript Exercises - w3resource</p>
+<div>
+    <button id="jsstyle" onclick="js_style()">Style</button>
+</div>
+
+<script>
+    function  js_style(){
+        document.getElementById("text").style.color="red";
+        document.getElementById("text").style.fontSize="32px";
+        document.getElementById("text").style.fontFamily="arial";
+
+    }
+</script>
+</body>
+</html>
+question 2
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Return first and last name from a form - w3resource</title>
+  </head>
+  <body>
+    <form id="form1" onsubmit="getFormvalue()">
+      First name:
+      <input type="text" name="fname" value="David" /><br />
+      Last name:
+      <input type="text" name="lname" value="Beckham" /><br />
+      <input type="submit" value="Submit" />
+
+      <script>
+        const firstName = document.getElementsByTagName("input")[0].value;
+        const lastName = document.getElementsByTagName("input")[1].value;
+        console.log(firstName, lastName);
+        function getFormvalue() {
+          console.log(firstName, lastName);
+        }
+      </script>
+    </form>
+  </body>
+</html>
+question 3
+<!DOCTYPE html>
+<html><head>
+    <meta charset=utf-8 />
+    <title>Remove items from a dropdown list</title>
+</head><body><form>
+    <select id="colorSelect">
+         <option>Red</option>
+         <option>Green</option>
+         <option>White</option>
+         <option>Black</option>
+    </select>
+    <input type="button" onclick="removecolor()" value="Select and Remove">
+</form>
+<script>
+   function removecolor(){
+       const element = document.getElementById("colorSelect");
+       element.remove(element.selectedIndex);
+   }
+</script>
+</body>
+question no 4
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">hello its me i just want to bold the the paragraphg words</p>
+
+<script>
+    document.getElementById("demo").onmouseover = function() {mouseOver()};
+
+
+    function mouseOver() {
+        document.getElementById("demo").style.fontWeight = "bold";
+        document.getElementById("demo").style.fontSize = "32px";
+    }
+
+
+</script>
+
+</body>
+</html>
+question no 5
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>images</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+   .one{
+        border: 4px solid blue;
+        border-style: double;
+    }
+   .two{
+       border: 4px solid green;
+       border-style: dashed
+   }
+    </style>
+</head>
+<body>
+<img src='http://assets.stickpng.com/thumbs/580b585b2edbce24c47b2704.png' alt='photos'  class="one" height='150px'/>
+<img src='https://static.vecteezy.com/system/resources/previews/001/193/929/non_2x/vintage-car-png.png' alt='photos'
+     class="two"   height='150px'/>
+<img src='https://www.kindpng.com/picc/m/381-3816942_indoor-plants-png-transparent-png.png' alt='photos' class="one"  height='150px'/>
+<img src='https://www.freepnglogos.com/uploads/dog-png/bow-wow-gourmet-dog-treats-are-healthy-natural-low-4.png' alt='photos'
+     class="two"  height='150px'/>
+<img src='https://assets.webiconspng.com/uploads/2017/09/House-PNG-Image-45779.png' alt='photos' class="one" height='150px'/>
+</body>
+</html>
